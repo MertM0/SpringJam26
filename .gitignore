@@ -57,6 +57,10 @@ Build/*
 Build/*/**
 !Build/*/PakBlacklist*.txt
 
+# Explicitly ignore packaged Windows builds
+Build/Windows/
+Build/Windows/**
+
 # Don't ignore icon files in Build
 !Build/**/*.ico
 
@@ -73,6 +77,8 @@ Plugins/**/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
+**/Content/__ExternalActors__
+**/Content/__ExternalObjects__
 **/Content/Developers
 **/Content/LevelPrototyping
 
